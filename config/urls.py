@@ -22,5 +22,5 @@ from senat import views as senat_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', core_views.home),
-    path('martin-levrier/', senat_views.senateur),
+    path('senateur/<str:slug>/', senat_views.senateur),
 ]

@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div style="color:#5426F6">À l'Assemblée:
+<div style="color:#5426F6"># À l'Assemblée:
 
 Députée du jour: <a href="/">Claudia Rouaux</a>
 
@@ -10,21 +10,16 @@ Députée du jour: <a href="/">Claudia Rouaux</a>
 En ce moment: bâtiment caméra caméras piétons champêtre diffuser diffusion
 
 <a href="/">Activité des 12 derniers mois</a></div>
+<div style="color:#F62630"># Au Sénat:
 
------------------------------------
-
-<div style="color:#F62630">Au Sénat:
-
-Sénateur du jour: <a href="/martin-levrier/">Martin Lévrier</a>
+Sénateur du jour: <a href="senateur/{{senateur.slug}}">{{senateur.Prenom_usuel}} {{senateur.Nom_usuel}}</a>
 
 <a href="/">Trouver son sénateur</a>
 
 En ce moment: AAH accès addiction administration AFD agit agriculteur assurance maladie autonomie branche
 
 <a href="/">Activité des 12 derniers mois</a></div>
--------------------------------------
-
-Les derniers commentaires:
+# Les derniers commentaires:
 
 - Questions d'actualité au gouvernement - Suite aux propos de Jean-Yves Le Drian le 04/11/2020, aristide a dit le 18/11/2020 :
 
